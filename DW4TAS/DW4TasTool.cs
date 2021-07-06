@@ -13,7 +13,7 @@ using BizHawk.Emulation.Common;
 
 namespace DW4TAS
 {
-	[ExternalTool("MyTool")]
+	[ExternalTool("DW4-TasTool")]
 	public partial class DW4TasTool : Form, IExternalToolForm
 	{
 		public DW4TasTool()
