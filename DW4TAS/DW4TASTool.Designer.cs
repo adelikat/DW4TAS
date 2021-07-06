@@ -30,16 +30,25 @@ namespace DW4TAS
 		private void InitializeComponent()
 		{
 			this.TestLabel = new System.Windows.Forms.Label();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.SuspendLayout();
 			// 
 			// TestLabel
 			// 
 			this.TestLabel.AutoSize = true;
-			this.TestLabel.Location = new System.Drawing.Point(12, 9);
+			this.TestLabel.Location = new System.Drawing.Point(12, 78);
 			this.TestLabel.Name = "TestLabel";
 			this.TestLabel.Size = new System.Drawing.Size(35, 13);
 			this.TestLabel.TabIndex = 0;
 			this.TestLabel.Text = "label1";
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(686, 24);
+			this.menuStrip1.TabIndex = 1;
+			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// DW4TasTool
 			// 
@@ -47,6 +56,8 @@ namespace DW4TAS
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(686, 390);
 			this.Controls.Add(this.TestLabel);
+			this.Controls.Add(this.menuStrip1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "DW4TasTool";
 			this.Text = "Dragon Warrior 4 TAS Tool";
 			this.ResumeLayout(false);
@@ -57,6 +68,7 @@ namespace DW4TAS
 		#endregion
 
 		private System.Windows.Forms.Label TestLabel;
+		private System.Windows.Forms.MenuStrip menuStrip1;
 	}
 }
 

@@ -14,7 +14,7 @@ using BizHawk.Emulation.Common;
 namespace DW4TAS
 {
 	[ExternalTool("DW4-TasTool")]
-	public partial class DW4TasTool : Form, IExternalToolForm
+	public partial class DW4TasTool : Form, IExternalToolForm, IToolFormAutoConfig
 	{
 		public DW4TasTool()
 		{
