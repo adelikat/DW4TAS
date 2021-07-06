@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BizHawk.Client.Common;
 using BizHawk.Client.EmuHawk;
+using BizHawk.Emulation.Common;
 
 namespace DW4TAS
 {
@@ -20,9 +21,18 @@ namespace DW4TAS
 			InitializeComponent();
 		}
 
+		[RequiredService]
+		private IEmulator Emulator { get; set; }
+
 		public void UpdateValues(ToolFormUpdateType type)
 		{
-			
+			switch (type)
+			{
+				case ToolFormUpdateType.General:
+				case ToolFormUpdateType.PostFrame:
+					FrameUpdate();
+					break;
+			}
 		}
 
 		public void Restart()
@@ -34,5 +44,10 @@ namespace DW4TAS
 
 		public virtual bool IsActive => IsHandleCreated && !IsDisposed;
 		public virtual bool IsLoaded => IsActive;
+
+		private void FrameUpdate()
+		{
+			TestLabel.Text = Emulator.Frame.ToString();
+		}
 	}
 }

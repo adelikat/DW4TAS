@@ -9,6 +9,7 @@
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="all" />
 		<Reference Include="System.Windows.Forms" />
 		<Reference Include="BizHawk.Client.Common" HintPath="$(SolutionDir)../BizHawk/output/dll/BizHawk.Client.Common.dll" />
+		<Reference Include="BizHawk.Emulation.Common" HintPath="$(SolutionDir)../BizHawk/output/dll/BizHawk.Emulation.Common.dll" />
 		<Reference Include="BizHawk.Client.EmuHawk" HintPath="$(SolutionDir)../BizHawk/output/EmuHawk.exe" />
 		<Reference Include="BizHawk.Common" HintPath="$(SolutionDir)../BizHawk/output/dll/BizHawk.Common.dll" />
 		<Reference Include="BizHawk.WinForms.Controls" HintPath="$(SolutionDir)../BizHawk/output/dll/BizHawk.WinForms.Controls.dll" />
