@@ -1,0 +1,11 @@
+**/.vs/**
+**/.vscode/
+**/bin/**
+**/obj/**
+/packaged_output
+/test_output
+**/Release/**
+**/Debug/**
+
+*.suo
+*.csproj.user
